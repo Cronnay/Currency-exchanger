@@ -65,11 +65,15 @@ $(document).on("pagehide", "#page1", function() { //when leaving page1
   $('#lol').empty();
 });
 
-$(document).on("pagebeforeshow","#page3", function() {
+$(document).on("pagebeforeshow","#page3", function() { //just before entering page3
 
   $.getJSON("js/data.json", function(result){
     $.each(result, function(i, field){
       $("tbody").append("<tr><td>" + i + "</td><td>" + field + "</td></tr>");
     });
   });
+});
+
+$(document).on("pagehide", '#page3', function() {
+  $("tbody").empty();
 });
