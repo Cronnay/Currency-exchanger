@@ -1,6 +1,6 @@
 {
-  "name": "My App",
-  "description": "Description of your app",
+  "name": "$£88£ - Currency converter",
+  "description": "Convert currency to and from SEK",
   "launch_path": "/index.html",
   "icons": {
     "128": "/img/logo.png"
