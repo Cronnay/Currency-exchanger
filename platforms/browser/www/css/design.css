@@ -2,8 +2,7 @@
   font-size: 20px;
 }
 
-[data-role=page]{height: 100% !important; position:relative !important;}
-[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;}
+.ui-page { -webkit-backface-visibility: hidden; }
 
 table{
   width: 100%;
