@@ -1,0 +1,24 @@
+.lel{
+  font-size: 20px;
+}
+
+[data-role=page]{height: 100% !important; position:relative !important;}
+[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;}
+
+table{
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+thead tr{
+  border-bottom: 1px solid black;
+}
+tbody{
+  padding-top: 10px;
+}
+tbody tr:nth-child(even){
+  background-color: rgba(128, 128, 128, 0.3);
+}
+tbody td{
+  font-size: 20px;
+}

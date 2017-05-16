@@ -3,9 +3,121 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <title>Blank App</title>
+        <link rel="stylesheet" href="css/themes/mytheme.css" />
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="css/design.css">
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <title>Currency Exchanger</title>
     </head>
     <body>
-        <script type="text/javascript" src="cordova.js"></script>
+      <div data-role="page" id="page2" data-theme="d">
+
+        <div data-role="header">
+          <h1>SEK till valfri</h1>
+          <div data-role="navbar" data-theme="d">
+            <ul>
+              <li><a href="#page2" data-transition="slide">SEK till valfri</a></li>
+              <li><a href="#page1" data-transition="slideup">Valfri till SEK</a></li>
+              <li><a href="#page3" data-transition="slideup">Förteckning</a></li>
+            </ul>
+          </div>
+        </div>
+        <div data-role="main" class="ui-content">
+          <fieldset class="ui-field-contain">
+            <label for="sek">Svenska kronor:</label>
+            <input type="number" id="sek" name="sek">
+            <br>
+
+
+            <label for="day">Välj valuta</label>
+            <select name="currency" id="currency">
+            </select>
+
+
+            <div class="ui-grid-solo" style="padding-top: 15px;">
+              <div class="ui-block-a"><button type="button" data-theme="d" id="omvandla">Klicka för att omvandla</button></div>
+            </div>
+
+            <p class="lel" id="lmao"></p>
+          </fieldset>
+
+        </div>
+
+        <div data-role="footer">
+          <h2>&copy; Sebastian Berglönn 2017</h2>
+        </div>
+
+      </div>
+
+      <div data-role="page" id="page1" data-theme="d">
+
+        <div data-role="header">
+          <h1>Valfri till SEK</h1>
+          <div data-role="navbar" data-theme="d">
+            <ul>
+              <li><a href="#page2" data-transition="slideup">SEK till valfri</a></li>
+              <li><a href="#page1" data-transition="slideup">Valfri till SEK</a></li>
+              <li><a href="#page3" data-transition="slideup">Förteckning</a></li>
+            </ul>
+          </div>
+        </div>
+        <div data-role="main" class="ui-content">
+          <fieldset class="ui-field-contain">
+            <label for="curr">Välj valuta</label>
+            <select name="curr" id="curr">
+            </select><br>
+            <label for="currvalue">Hur mycket i den valutan?</label>
+            <input type="number" id="currval" name="currval" ><br>
+
+            <div class="ui-grid-solo" style="padding-top: 15px;">
+              <div class="ui-block-a"><button type="button" data-theme="d" id="omvandla-tillbaka">Klicka för att omvandla</button></div>
+            </div>
+
+            <div class="ui-grid-solo" style="margin-top: 40px;">
+              <label for="sek">Svenska kronor:</label>
+              <p class="lel" id="lol"></p>
+            </div>
+
+          </fieldset>
+
+        </div>
+
+        <div data-role="footer">
+          <h2>&copy; Sebastian Berglönn 2017</h2>
+        </div>
+
+      </div>
+
+      <div data-role="page" id="page3" data-theme="d">
+
+        <div data-role="header">
+          <h1>Förteckning</h1>
+          <div data-role="navbar" data-theme="d">
+            <ul>
+              <li><a href="#page2" data-transition="slideup">SEK till valfri</a></li>
+              <li><a href="#page1" data-transition="slideup">Valfri till SEK</a></li>
+              <li><a href="#page3" data-transition="slideup">Förteckning</a></li>
+            </ul>
+          </div>
+        </div>
+        <div data-role="main" class="ui-content">
+          <table>
+            <thead>
+              <tr>
+                <th>Kod</th>
+                <th>Land</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+
+
+      </div>
     </body>
 </html>
