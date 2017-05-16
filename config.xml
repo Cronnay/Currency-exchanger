@@ -9,5 +9,6 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <access origin="http://api.fixer.io/latest?base=SEK" />
     <icon src="icon.png" />
 </widget>
