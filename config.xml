@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.app.sebastianberglonn" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
-	versionCode="10001">
+<widget id="com.zoomicweb.sebastianberglonn" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
+	versionCode="10010">
     <name>$£88£ - Currency converter for SEK</name>
     <description>
         A currency converter for SEK
     </description>
-    <author email="sebastianberglonn@gmail.com" href="http://studenter.miun.se/~sebe1603/portfolio/">
+    <author email="sebastianberglonn@zoomicweb.com" href="http://zoomicweb.com">
         Sebastian Berglönn
     </author>
     <content src="index.html" />
